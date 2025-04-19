@@ -29,10 +29,12 @@ body {
 }
 
 section{
-    min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
 
+section .height {
+    min-height: 100vh;
+}
 
 .header {
     position: fixed;
@@ -365,7 +367,7 @@ span {
 
 .contact {
     margin-top: 0;
-    padding-top: 0rem; 
+    padding-top: 7rem; 
 }
 .contact h2 {
     margin: 0rem;
