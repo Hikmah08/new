@@ -234,6 +234,7 @@ span {
 
 .portfolio {
     background: var(--second--bg-color);
+    padding-bottom: 3rem;
 }
 
 .portfolio h2{
@@ -309,10 +310,60 @@ span {
     border-radius: 50%;
 }
 
+
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--bg-color);
 }
+
+.experience {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;     
+}
+
+.experience-container {
+    width: 100%;
+}
+
+.experience h2 {
+    margin-bottom: 5rem;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+}
+
+.experience-container .experience-box {
+    flex: 1 1 30rem;
+    background: var(--second--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.experience-container .experience-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.experience-box i {
+    font-size: 7rem;
+    color: var(--second--bg-color);
+}
+
+.experience-box h3 {
+    font-size: 2.6rem;
+}
+.experience-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
 
 .contact h2 {
     margin: 3rem;
