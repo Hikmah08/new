@@ -11,40 +11,41 @@ document.addEventListener("DOMContentLoaded", () => {
     // Select sections and navigation links
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("header nav a");
-
+    
     document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
-      
-        // Get form data
-        const formData = new FormData(event.target);
-      
-        // Create an object to hold the form data
-        const data = {};
-        formData.forEach((value, key) => {
-          data[key] = value;
-        });
-      
-        // Send the data to Formspree
-        fetch("https://formspree.io/f/xanernve}/f/{contact-form}", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(data)
-        })
-        .then(response => {
-          if (response.ok) {
-            alert("Message sent successfully!");
-          } else {
-            alert("There was an error sending your message.");
-          }
-        })
-        .catch(error => {
-          console.error("Error:", error);
-          alert("There was an error sending your message.");
-        });
+      event.preventDefault();
+    
+      const formData = new FormData(this);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
       });
-      
+    
+      fetch("https://formspree.io/f/xanernve", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          alert("Message sent successfully!");
+          this.reset();
+        } else {
+          response.json().then(err => {
+            console.error(err);
+            alert("Error: " + (err?.error || "Form submission failed."));
+          });
+        }
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        alert("There was an error sending your message.");
+      });
+    });
+    
     // Scroll event listener to update active links
     window.addEventListener("scroll", () => {
         const top = window.scrollY;
