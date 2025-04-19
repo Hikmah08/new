@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       
         // Send the data to Formspree
-        fetch("https://formspree.io/f/xanernve}", {
+        fetch("https://formspree.io/f/xanernve}/f/{contact-form}", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
