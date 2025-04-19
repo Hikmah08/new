@@ -170,21 +170,30 @@
     </section>
 
     <!--contact section design-->
-
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+        <h2 class="heading">Contact <span>Me</span></h2>  
+        <!-- Form Starts -->
         <form id="contact-form" action="https://formspree.io/f/xanernve" method="POST">
-            <div class="input-box">
-                <input type="text" id="name" placeholder="Full Name">
-                <input type="email" id="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Email subject">
-            </div>
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+          </div>
+          
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>  
+          <div class="input-box">
+            <input type="text" name="subject" placeholder="Email subject" required>
+          </div>
+          
+          <div class="input-box">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          </div>
+          
+          <input type="submit" value="Send Message" class="btn">
         </form>
-    </section>
+        <!-- Form Ends -->
+      </section>
+
     <!--footer design-->
     <footer class="footer">
         <div class="footer-text">
