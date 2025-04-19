@@ -234,7 +234,7 @@ span {
 
 .portfolio {
     background: var(--second--bg-color);
-    padding-bottom: 3rem;
+    padding-bottom: 7rem;
 }
 
 .portfolio h2{
@@ -319,7 +319,7 @@ span {
 .experience {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;     
+    padding: 4rem 0;     
 }
 
 .experience-container {
@@ -366,7 +366,7 @@ span {
 
 
 .contact h2 {
-    margin: 3rem;
+    margin: 0rem;
 }
 
 .contact form {
