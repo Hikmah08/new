@@ -170,6 +170,16 @@ span {
     background: var(--second--bg-color);
 }
 
+.about-img >*{
+    width: 100%;
+    height: 80%;
+}
+
+.about-img{
+    height: 40rem;
+    width: 50rem;
+}
+
 .about-img img {
     width: 100%;
 }
@@ -178,7 +188,7 @@ span {
     text-align: center;
     font-size: 4.5rem;
 }
-/*new*/
+
 .about-content{
     width: 100%;
 }
