@@ -88,7 +88,7 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 // Typed.js initialization
 const typed = new Typed(".multiple-text", {
-    strings: ["a Content Writer", "a Space Host","an Ambassasor", "a Web3 Enthusiast"],
+    strings: ["a Content Writer", "a Space Host","an Ambassador", "a Web3 Enthusiast"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
